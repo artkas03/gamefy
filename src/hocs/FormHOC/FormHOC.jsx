@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from "@nextui-org/react";
 
 import './styles.scss';
+import Link from 'next/link';
 
 const FormHOC = ({ 
   children,
@@ -44,9 +45,9 @@ const FormHOC = ({
             <div className="flex gap-1">
               <p className="form__footertext-group-text">{footerText}</p>
 
-              <a href={footerLinkAction} className="form__footertext-group-link">
+              <Link href={footerLinkAction} className="form__footertext-group-link">
                 {footerLinkText}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

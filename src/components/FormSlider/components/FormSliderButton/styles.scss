@@ -5,10 +5,8 @@
   height: fit-content;
   width: fit-content;
   padding: 12px;
-  border-radius: 8px;
-  border: 1px solid $main-gray-600;
 
-  &-right {
-    transform: rotate(180deg)
+  &-right svg {
+    transform: rotate(180deg);
   }
 }
