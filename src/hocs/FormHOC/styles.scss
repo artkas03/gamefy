@@ -51,6 +51,7 @@
 
   &__footertext-group {
     font-size: 14px;
+    margin-bottom: 14px;
 
     &-wrapper {
       width: fit-content;
@@ -60,6 +61,14 @@
     &-text {
       font-weight: 400;
       color: $main-gray-400;
+    }
+
+    &-link {
+      transition: all .3s ease;
+
+      &:hover {
+        color: $main-gray-500;
+      }
     }
   }
 }
