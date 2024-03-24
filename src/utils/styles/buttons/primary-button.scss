@@ -1,0 +1,27 @@
+.primary-button {
+  transition: all .3s ease;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  line-height: 24px;
+  font-weight: 700;
+  gap: 8px;
+
+  &:hover {
+    background-color: $main-primary-600;
+  }
+
+  &:active {
+    background-color: $main-primary-700;
+  }
+
+  &:focus {
+    border: 1px solid $main-primary-400;
+  }
+
+  &:disabled {
+    background-color: $main-gray-800;
+    color: $main-gray-700;
+  }
+}

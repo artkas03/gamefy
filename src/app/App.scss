@@ -1,0 +1,15 @@
+@import '../utils/styles/index.scss';
+@import '../utils/mixins/media-queries.scss';
+@import './authorization/styles.scss';
+
+body {
+  background-color: $main-gray-900;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.homepage {
+  &__grid {
+    padding-inline: 16px;
+  }
+}

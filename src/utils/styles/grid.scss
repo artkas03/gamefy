@@ -1,0 +1,20 @@
+@import '../mixins/media-queries.scss';
+
+.grid {
+  --colums: 4;
+  display: grid;
+  grid-template-columns: repeat(var(--colums), 1fr);
+  grid-column-gap: 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100vh;
+
+  @include tablet {
+    --colums: 6;
+    grid-column-gap: 32px;
+  }
+
+  @include desktop {
+    --colums: 12;
+  }
+}

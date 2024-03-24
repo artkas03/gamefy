@@ -12,9 +12,10 @@ const FormHOC = ({
   footerLinkAction,
   buttonText,
   buttonOnclick,
+  ...restProps
 }) => {
   return (
-    <div className="form">
+    <div className="form" {...restProps}>
       {titleValue && (
         <div className="form__title">
           <h2>{titleValue}</h2>
@@ -29,9 +30,10 @@ const FormHOC = ({
 
       {children}
 
-      <Button 
+      <Button
         color="primary"
         className="form__button primary-button"
+        onClick={buttonOnclick}
       >
         {buttonText}
       </Button>
